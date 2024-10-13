@@ -18,14 +18,14 @@ export class DashboardComponent {
   usuarios:Usuario[] = [
     {
       id:1,
-      nombre: 'Braulio Martinez',
-      descripcion: 'Cliente estrella',
+      name: 'Braulio Martinez',
+      description: 'Cliente estrella',
       rol:{rol:'Cliente'}
     },
     {
       id:2,
-      nombre: 'Gael Hernandez',
-      descripcion: 'Administrador de redes',
+      name: 'Gael Hernandez',
+      description: 'Administrador de redes',
       rol:{rol:'Admin'} 
     }
   ]

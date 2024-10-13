@@ -12,8 +12,10 @@ export type Roles = {
 }
  export interface Usuario{
     id: number,
-    nombre: string,
-    descripcion: string,
+    img?: string,
+    price?: string,
+    name: string,
+    description: string,
     rol: Roles
  }
  export interface Productos{
