@@ -1,5 +1,10 @@
-@for (car of cars; track $index) {
-    <h1 >
-        {{car.color}}
-    </h1>
+<div class="container">
+
+@for (usuario of usuarios; track usuario.id) {
+    <app-card
+        [data] = "{
+            data:usuario
+    }"   
+    />
 }
+</div>

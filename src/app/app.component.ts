@@ -10,11 +10,5 @@ import { HomeComponent } from "./pages/home/home.component";
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title: string = "titulo"
-  VerPaisajesRel(){
-    alert("Ver mas paisajes relacionados")
-  }
-  VerOto(){
-    alert("Ver mas Otoños")
-  }
+  
 }

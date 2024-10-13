@@ -1,0 +1,17 @@
+<div class="card">
+    @if(data.data.img){
+        <div class="card-header">
+            <img [src]="data.data.img" alt="" class="image">
+         </div>
+    }
+    <div class="card-body">
+        <h1 class="title">{{data.data.name}}</h1>
+        <input id="texto" type="text" class="input" (change)="onChange($event)">
+        <p class="info">{{data.data.description}}</p>
+        @if(data.data.price){
+            <p class="Price">{{data.data.price}}</p>
+        }
+    </div>
+   
+</div>
+

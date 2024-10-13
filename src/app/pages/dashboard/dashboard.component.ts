@@ -1,16 +1,35 @@
 import { Component } from '@angular/core';
-import { Car } from '../../modules/test';
+import { Usuario } from '../../modules/test';
+import { HomeComponent } from "../home/home.component";
+
 
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [],
+  imports: [HomeComponent],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'
 })
 export class DashboardComponent {
-  cars: Car[] = [
+
+
+
+  usuarios:Usuario[] = [
+    {
+      id:1,
+      name: 'Braulio Martinez',
+      description: 'Cliente estrella',
+      rol:{rol:'Cliente'}
+    },
+    {
+      id:2,
+      name: 'Gael Hernandez',
+      description: 'Administrador de redes',
+      rol:{rol:'Admin'} 
+    }
+  ]
+  /*cars: Car[] = [
     {
       model: 'Mazda',
       color: 'Red',
@@ -26,6 +45,6 @@ export class DashboardComponent {
       year: '2002'
     }
 
-  ]
+  ]*/
 }
 

@@ -1,20 +1,22 @@
 import { Component, Input, input } from '@angular/core';
+import { CardComponent } from "../../components/card/card.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [CardComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  @Input() image!: string;
-  @Input() title!: string;
-  @Input() info!: string;
-  @Input() text_btn!: string;
-  @Input() ClickEvento!:() => void
-
-  OnClick(){
-    this.ClickEvento();
+  title: string = "titulo"
+  VerPaisajesRel(){
+    alert("Ver mas paisajes relacionados")
+  }
+  VerOto(){
+    alert("Ver mas Otoños")
+  }
+  GoToProducts(){
+    window.location.href = '/products'
   }
 }
