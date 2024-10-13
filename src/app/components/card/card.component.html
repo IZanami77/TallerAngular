@@ -1,0 +1,13 @@
+<div class="card">
+    <div class="card-header">
+       <img [src]="productos.img" alt="" class="image">
+    </div>
+    <div class="card-body">
+        <h1 class="title">{{productos.name}}</h1>
+        <input id="texto" type="text" class="input" (change)="onChange($event)">
+        <p class="info">{{productos.description}}</p>
+        <p class="Price">{{productos.price}}</p>
+    </div>
+   
+</div>
+
